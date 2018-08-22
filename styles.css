@@ -5,6 +5,10 @@ body {
     font-family: 'Fira Sans';
 }
 
+.white {
+    color: white;
+}
+
 .remark-code, .remark-inline-code {
     font-family: 'Source Code Pro';
 }
