@@ -50,13 +50,13 @@ class: middle, left
 
 # UPnP Casting
 
-- UPnP casting
-  - Send a UPnP discovery packet over **UDP** broadcast
-  - Dongle on LAN responds with some fugly **XML**
-  - Serve the media file over **HTTP**
-  - Send an XML request to the dongle pointing to the file
-  - Send play/pause actions as neccesary
-- You can implement this with several dozen lines of Python
+- Send a UPnP discovery packet over **UDP** broadcast
+- Dongle on LAN responds with some fugly **XML**
+- Serve the media file over **HTTP**
+- Send an XML request to the dongle pointing to the file
+- Send play/pause actions as neccesary
+
+You can implement this with several dozen lines of Python/JS (or any other modern "dynamic" language)
 
 ---
 class: middle, left
@@ -84,11 +84,6 @@ background-size: cover
 ---
 class: middle, center
 
-![](https://i.imgur.com/8acN5PG.png)
-
----
-class: middle, center
-
 background-image: url(https://hackerwarehouse.com/wp-content/uploads/2013/03/rtlsdr-dvbt-820t2-454A9410a.jpg)
 background-size: cover
 
@@ -103,12 +98,21 @@ class: middle, left
 - Let's do an exercise rewrite!
 
 ---
+class: middle, center
+
+![](https://i.imgur.com/8acN5PG.png)
+
+
+---
 class: middle, left
 
 # `impl RtlSdr`
 
 - C **is** the original systems programming language
 - Writing low-level code gives you a much better grasp of the language vs. C
+- Personal anecdote:
+  - *really* hard to stop thinking in OOP terms
+  - Especially not having **inheritance** in your toolkit
 
 Work in progress at [https://github.com/yuvadm/rustl-sdr/](https://github.com/yuvadm/rustl-sdr/)
 
@@ -117,19 +121,32 @@ class: top, center
 background-image: url(https://i2.wp.com/i40club.com/wp-content/uploads/2017/11/Enlightenment-5-Simple-Steps.jpg)
 background-size: cover
 
-# Learn **idiomatic** Rust as fast as possible
+# **Idiomatic** Rust
+
+---
+class: middle, left
+background-image: url(https://lumiere-a.akamaihd.net/v1/images/Yoda-Retina_2a7ecc26.jpeg)
+background-size: cover
+
+# .white[Mentors]
 
 ---
 class: middle, left
 
-# Title 8
+## `:s/mentors/references/g`
+
+- [Unofficial Rust API Guidelines](https://rust-lang-nursery.github.io/api-guidelines/)
+- [Unofficial Rust Design Patterns](https://github.com/rust-unofficial/patterns)
+- [Writing an OS in Rust](https://os.phil-opp.com/)
+- [Writing a browser layout engine in Rust](https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html)
+- [Building a DNS server in Rust](https://github.com/EmilHernvall/dnsguide)
 
 ---
 class: middle, left
 
-# Title 9
+# Thanks!
 
-
+## Questions?
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js" type="text/javascript">
