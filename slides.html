@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>N00bing through Rust</title>
+    <title>n00bing through Rust</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
@@ -9,9 +9,9 @@
     <textarea id="source">
 class: middle, center
 
-# N00bing through Rust
+# n00bing through Rust
 
-### My journey through
+## Yuval Adam
 
 ---
 class: middle, left
@@ -23,6 +23,18 @@ class: middle, left
 - 10+ years Pythonista
 - [https://yuv.al](https://yuv.al)
 - [@yuvadm](https://twitter.com/yuvadm)
+
+---
+class: middle, left
+
+## Baby steps
+
+- [https://doc.rust-lang.org/book/second-edition/](https://doc.rust-lang.org/book/second-edition/)
+  - Book is a great reference for specific concepts
+  - That's it.
+- [https://exercism.io/tracks/rust](https://exercism.io/tracks/rust)
+  - Exercism is a good *exercise*
+- But I need a real-world project...
 
 ---
 class: middle, left
@@ -46,6 +58,20 @@ class: middle, left
   - Send play/pause actions as neccesary
 - You can implement this with several dozen lines of Python
 
+---
+class: middle, left
+
+# UPnP Casting
+
+## Dependencies
+
+- `clap` for CLI
+- `hyper` for HTTP calls
+- `tokio-fs` for serving the static file
+- `tokio-io` for handling UDP traffic
+- `tokio` for wrapping it all in one runtime
+- `futures`  because... you need it
+
 It's on [https://github.com/yuvadm/slingr](https://github.com/yuvadm/slingr)
 
 ---
@@ -59,6 +85,32 @@ background-size: cover
 class: middle, center
 
 ![](https://i.imgur.com/8acN5PG.png)
+
+---
+class: middle, center
+
+background-image: url(https://hackerwarehouse.com/wp-content/uploads/2013/03/rtlsdr-dvbt-820t2-454A9410a.jpg)
+background-size: cover
+
+---
+class: middle, left
+
+# RTL-SDR
+
+- A very cool piece of hardware used as *poor man's Software Defined Radio*
+  - [SDR Intro talk at PyCon 2018](https://www.youtube.com/watch?v=xJOFaOM2wUc) (not really a Python talk)
+- Reference library implemented in C + heavy usage of `libusb`
+- Let's do an exercise rewrite!
+
+---
+class: middle, left
+
+# `impl RtlSdr`
+
+- C **is** the original systems programming language
+- Writing low-level code gives you a much better grasp of the language vs. C
+
+Work in progress at [https://github.com/yuvadm/rustl-sdr/](https://github.com/yuvadm/rustl-sdr/)
 
 ---
 class: top, center
